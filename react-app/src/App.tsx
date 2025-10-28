@@ -2,7 +2,7 @@ import Card, { CardBody } from "./Components/Card";
 import List from "./Components/List";
 
 function App() {
-  const list: string[] = [];
+  const list: string[] = ["Goku", "Tanjiro", "Chanchito feliz"];
 
   const handleSelect = (elemento: string) => {
     console.log("imprimiendo", elemento);
