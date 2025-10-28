@@ -10,14 +10,12 @@ function App() {
 
   return (
     <Card>
-      {/* {"" && "string vacio"}
-      {undefined && "indefinido"}
-      {null && "nulo"}
-      {false && "falso"}
-      {0 && "0"} */}
-      {list.length !== 0 && "mi lista"}
       <CardBody title="Hola Mundo" text="El texto del componente" />
-      <List data={list} onSelect={handleSelect} />
+      {list.length !== 0 ? (
+        <List data={list} onSelect={handleSelect} />
+      ) : (
+        "No hay contenido"
+      )}
     </Card>
   );
 }
